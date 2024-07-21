@@ -17,8 +17,8 @@ spec:
     spec: 
       terminationGracePeriodSeconds: 1
       containers:
-      - name: hello-pod
-        image: nigelpoulton/getting-started-k8s:1.0
+      - name: hello-metabasepod
+        image: metabase/metabase:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 8080
+        - containerPort: 3000
